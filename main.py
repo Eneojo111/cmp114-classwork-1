@@ -21,12 +21,6 @@ def write(master, name, oc, pin):
     fdet = open(str(accnt_no) + ".txt", "w")
     fdet.write(pin + "\n")
     fdet.write(oc + "\n")
-    fdet.write(str(accnt_no) + "\n")
-    fdet.write(name + "\n")
-    fdet.close()
-
-
-frec = open(str(accnt_no) + "-rec.txt", 'w')
 frec.write("Date                             Credit      Debit     Balance\n")
 frec.write(str(strftime("[%Y-%m-%d] [%H:%M:%S]  ", gmtime())) + "     " + oc + "              " + oc + "\n")
 frec.close()
