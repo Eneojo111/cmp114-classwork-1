@@ -1,4 +1,3 @@
-
 class Maths:
     @staticmethod
     def addition(a, b):
@@ -105,5 +104,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
